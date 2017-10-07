@@ -1,0 +1,7 @@
+README
+
+This is a collection of scripts for working with BLAST.
+
+getFastas.pl - a script to pull out a specific set of protein sequences from a .faa file, for use with BLAST
+BLASTsplitter.pl - a script to pull out all BLAST matches of a certain minimum bit score from BLAST output
+BlastTopHits.pl - a script to pull out the top BLAST hit for each protein query in BLAST output

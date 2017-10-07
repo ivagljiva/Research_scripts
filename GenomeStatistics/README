@@ -1,0 +1,12 @@
+README
+
+This is a collection of various scripts for obtaining statistics on genome/protein sequences.
+The scripts are not interdependent and can be used individually
+Please see the comments at the top of each script for a description of how they can be used.
+
+getGC.pl: Calculates length, GC content, and number of each DNA base in a set of sequences
+pFuncProteins.pl: Uses InterProScan output to determine which proteins in a set have a putative
+  Function (at least one gene ontology, or GO)
+Pcounts.pl: Counts the total number of proteins, as well as the number of proteins of a certain minimum
+  size, in a .fasta file. Also uses InterProScan output to determine the number of proteins with putative
+  function in each category.

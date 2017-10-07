@@ -1,0 +1,10 @@
+README
+
+This is a collection of scripts to use when making various Circos plots of a genome/chromosome.
+They are used to generate the data files that Circos needs.
+Please see the comments at the beginning of each file for a description of how to use the script.
+
+CircosHighlights.pl - for creating a highlight plot of specific genes
+GBFtoCircos.pl - for plotting forward- and reverse-strand genes
+IndelstoCircos.pl - for plotting indels/kb
+SNPtoCircos.pl - for plotting SNPs/kb

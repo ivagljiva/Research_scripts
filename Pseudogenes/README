@@ -1,0 +1,22 @@
+README
+
+These are scripts to check for possible broken genes (pseudogenes) in my annotated prokaryotic
+genomes.
+
+My typical workflow for these scripts is as follows.
+
+Input files: Annotated prokaryotic genome files (.tbl, .faa); I use PROKKA to annotate
+
+1) BLAST all of the genes in the genome against the NCBI database (using blastp with outfmt 6)
+    Output file: blastp.genome.txt
+2) Check for adjacent genes that have the same BLAST match
+    Command: perl pseudoCheck.pl blastp.genome.txt
+    Output file: Pseudos.txt
+3) Sort the potential pseudogenes into groups according to likelihood of being legitimate
+    Command: perl pseudoParser.pl Pseudos.txt genome.faa
+    Output files: genome.legit_pseudos.txt, genome.recheck_pseudos.txt, genome.discarded_pseudos.txt
+4) Manually check these potential pseudogenes and concatenate the truly legitimate ones into one file
+    Output file: final.pseudos.txt
+5) Add the psuedogenes into the genomes's .tbl file
+    Command: perl pseudoParser.pl final.pseudos.txt genome.tbl
+    Output files: genome.pseudos.tbl, genome.addPseudos.$time_string.log

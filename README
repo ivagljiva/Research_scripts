@@ -1,0 +1,14 @@
+README
+
+This is a collection of various Perl scripts that I have created and used in genomics research
+projects during my undergraduate study.
+
+They are free for anyone to use and modify for their own projects; credit/citations are, of course,
+appreciated.
+
+As many of these are older scripts, often written with specific input file formats (I was and am still
+learning to code better), please take care to read the script comments to determine how to get them working
+properly. None of the scripts will overwrite your input data, but unexpected output may be a result
+of improper usage.
+
+I welcome comments, questions, and suggestions; particularly if you notice any bugs.
