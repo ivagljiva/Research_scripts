@@ -20,7 +20,7 @@
     # locus tag should not use the 3-character sequence "EOF", which is used below to mark 'end of file'
 
 ## Feb 2017 NOTE: previous version did not do removal of all sig-peptides for pseudogenes; I added this
-## feature but have yet to test it! TEST THIS FIRST - see Vitreoscilla submission work
+## feature but have yet to test it!
 ## NOTE: all the pseudos' sig peptides that had to be taken out were for genes on complement strand - might be easier to parse them out based on this fact
 
 # Warning message for people who would like to use my script
